@@ -2,10 +2,12 @@ class BankAccount {
     // --- State / Fields ---
 
     // Instance variables (unique to every instantiated object)
+    @SuppressWarnings("FieldMayBeFinal")
     private String accountHolder;
     private double balance;
 
     // Static variables (shared across the entire class, stored once in memory)
+    @SuppressWarnings("FieldMayBeFinal")
     private static String bankName = "Global Trust Bank";
     private static int totalAccounts = 0;
 
